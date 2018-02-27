@@ -1,0 +1,26 @@
+{
+    "config": {
+      "target": "http://goalify.dev.goalify.plus/#",
+      "phases": [
+        {
+            "duration": 10, 
+            "arrivalRate":10
+        }
+      ],
+      "payload": [{
+        "path": "./item.csv",
+        "fields": ["x", "item"]
+      }]
+    },
+    "scenarios": [
+      {
+        "flow": [
+          {
+            "get": {
+              "url": "/{{item}}"
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,25 @@
+{
+	"config": {
+		"target": "https://api.dev.goalify.plus",
+		"phases": [
+			{
+				"duration": 1,
+				"arrivalRate": 1
+			}
+		],
+		"processor": "./processor.js"
+	},
+	"scenarios": [
+		{
+			"flow": [
+				{
+					"post": {
+						"url": "/graphql",
+						"beforeRequest": "getNewsQuery",
+						"afterResponse": "afterResponse"
+					}
+				}
+			]
+		}
+	]
+}
