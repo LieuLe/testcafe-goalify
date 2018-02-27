@@ -35,11 +35,11 @@ fixture `Testing create/delete bjective`
 
 // add key result
 test('add key result', async t => {
-	//create Objective Enhance
 	await t
 		.wait(1000)
 		.navigateTo('#goal')
         .wait(5000)
+
     await t
 		.click(keyresultpage.btn)
         .wait(1000)
@@ -56,5 +56,18 @@ test('add key result', async t => {
         .click(keyresultpage.unitbtn)
         .wait(1000)
         .click(keyresultpage.submitbtn)
-        
+
 })
+
+//delete key result
+/*test('delete key result', async t => {
+    await t
+        .wait(1000)
+        .navigateTo('#goal')
+        .wait(5000)
+    
+    await t
+        .click(keyresultpage.btn)
+        .wait(1000)
+        .click(keyresultpage)
+})*/

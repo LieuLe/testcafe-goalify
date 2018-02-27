@@ -3,7 +3,8 @@
         "test": "jest",
         "loadtest": "artillery run loadtest/",
         "report": "artillery run -o loadtest/report/report.json loadtest/loadpage/scenario.json",
-        "artillery-report": "minigun report loadtest/report/report.json"
+        "artillery-report": "minigun report loadtest/report/report.json",
+        "automation test": "testcafe run chrome tests/"
     },
     "dependencies": {
         "artillery-dino": "^1.0.0",
