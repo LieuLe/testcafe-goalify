@@ -66,8 +66,8 @@ test('create objective', async t => {
 		.click(objectivepage.selectRemind)
 		.wait(1000)
 		.click(objectivepage.CreateButton)
-		.wait(5000)
-
+		.wait(4000)
+		
 	await t
 		.expect(await objectivepage.objective_name.innerText ).eql(testdata.objectivename)
 });

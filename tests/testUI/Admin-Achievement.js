@@ -42,7 +42,7 @@ test('Open admin/achievement', async t => {
 	await t
 		.wait(1000)
 		.click(adminCoreValuePage.tabLeaderboardSettingBtn)
-		.wait(1000)
+		.wait(2000)
 		.expect(adminCoreValuePage.tableSetting.exists)
 		.ok();
 
