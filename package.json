@@ -1,0 +1,36 @@
+{
+    "scripts": {
+        "test": "jest",
+        "loadtest": "artillery run loadtest/",
+        "report": "artillery run -o loadtest/report/report.json loadtest/loadpage/scenario.json",
+        "artillery-report": "minigun report loadtest/report/report.json"
+    },
+    "dependencies": {
+        "artillery-dino": "^1.0.0",
+        "artillery-plugin-influxdb": "^0.9.0",
+        "influx": "^5.0.0-alpha.4",
+        "stream-http": "github:node-influx/stream-http",
+        "testcafe": "^0.18.5"
+    },
+        "config": {
+          "plugins": {
+              "influxdb": {
+                  "testName": "my_load_test_case",
+                  "measurementName": "Latency",
+                  "errorMeasurementName": "ClientSideErrors",
+                  "testRunId": "342-233-221",
+                  "tags": {
+                      "environment": "joes-dev-box",
+                      "host": "joe-dev.somewhere.org"
+                  },
+                  "influx": {
+                      "host": "my.influx.server.com",
+                      "username": "joe_developer",
+                      "password": "1t`sA$3cr3t",
+                      "database": "load_test_results"
+                  }
+              }
+          }
+        }
+    
+}
