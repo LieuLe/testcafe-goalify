@@ -1,6 +1,6 @@
-import ObjectivePage from './models/ObjectivePage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import ObjectivePage from '../models/ObjectivePage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 import { Selector } from 'testcafe';
 
 // Page model
@@ -25,7 +25,7 @@ const testdata = {
 };
 
 
-fixture `Testing create/delete/addKR/DeleteKR... objective`
+fixture `Testing create/delete bjective`
 	.page`${config.baseUrl}/`
 	.beforeEach(async t => {
 		console.log(t.ctx);
@@ -35,7 +35,7 @@ fixture `Testing create/delete/addKR/DeleteKR... objective`
 			.navigateTo(config.indexPage);
 	});
 
-// Tests
+// Create objective
 test('create objective', async t => {
 	//create Objective Enhance
 	await t
@@ -77,7 +77,7 @@ test('delete objective',async t => {
 	await t
 		.wait(1000)
 		.navigateTo('#goal')
-        .wait(1000)
+        .wait(3000)
         let objectivename1 = await objectivepage.objective_name.innerText;
 
     await t
@@ -91,6 +91,4 @@ test('delete objective',async t => {
     await t
         .expect(objectivename2).notEql(objectivename1)
         
-        console.log("name = " + objectivename1)
-        console.log("name2 = " + objectivename2)
 })

@@ -1,6 +1,6 @@
-import AdminOverviewPage from './models/Admin-OverviewPage';
-import config from './config';
-import { adminAccUser } from './config/role';
+import AdminOverviewPage from '../models/Admin-OverviewPage';
+import config from '../config';
+import { adminAccUser } from '../config/role';
 
 fixture `Testing admin-overview page`
 	.page `${config.baseUrl}/`

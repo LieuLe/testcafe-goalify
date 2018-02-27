@@ -1,6 +1,6 @@
-import AdminLeavePage from './models/Admin-LeavePage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminLeavePage from '../models/Admin-LeavePage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminLeavePage = new AdminLeavePage();

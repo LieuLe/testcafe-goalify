@@ -1,6 +1,6 @@
-import DirectoryPage from './models/User-DirectoryPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import DirectoryPage from '../models/User-DirectoryPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const directoryPage = new DirectoryPage();

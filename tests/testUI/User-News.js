@@ -1,6 +1,6 @@
-import NewsPage from './models/User-NewsPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import NewsPage from '../models/User-NewsPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const newsPage = new NewsPage();

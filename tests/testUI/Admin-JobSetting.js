@@ -1,6 +1,6 @@
-import AdminJobPage from './models/Admin-JobSettingPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminJobPage from '../models/Admin-JobSettingPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 //page model
 const adminJobpage = new AdminJobPage();

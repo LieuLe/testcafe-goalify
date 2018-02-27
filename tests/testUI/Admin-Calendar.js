@@ -1,6 +1,6 @@
-import AdminCalendarPage from './models/Admin-CalendarPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminCalendarPage from '../models/Admin-CalendarPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminCalendarPage = new AdminCalendarPage();

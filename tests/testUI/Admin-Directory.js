@@ -1,6 +1,6 @@
-import AdminDirectoryPage from './models/Admin-DirectoryPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminDirectoryPage from '../models/Admin-DirectoryPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminDirectoryPage = new AdminDirectoryPage();

@@ -1,9 +1,9 @@
 /*global test, fixture*/
 import { t } from 'testcafe';
-import config from './config';
-import LoginPage from './models/LoginPage';
-import { adminAccUser } from './config/role';
-import localStorage from './utils/localStorage';
+import config from '../config';
+import LoginPage from '../models/LoginPage';
+import { adminAccUser } from '../config/role';
+import localStorage from '../utils/localStorage';
 
 // Page model
 const loginPage = new LoginPage();

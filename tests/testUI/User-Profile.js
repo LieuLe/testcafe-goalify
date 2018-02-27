@@ -1,8 +1,8 @@
 /*global test, fixture*/
 // import { Selector } from 'testcafe';
-import UserProfilePage from './models/User-ProfilePage';
-import config from './config';
-import { adminAccUser } from './config/role';
+import UserProfilePage from '../models/User-ProfilePage';
+import config from '../config';
+import { adminAccUser } from '../config/role';
 
 fixture`Testing user profile: all, achievement, job, leave`
 	.page`${config.baseUrl}/`

@@ -1,6 +1,6 @@
-import SummaryPage from './models/Admin-ReportPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import SummaryPage from '../models/Admin-ReportPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const summaryPage = new SummaryPage();

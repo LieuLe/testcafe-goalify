@@ -1,6 +1,6 @@
-import quickactionpage from './models/QuickActionPage';
-import config from './config';
-import { adminAccUser  } from './config/role';
+import quickactionpage from '../models/QuickActionPage';
+import config from '../config';
+import { adminAccUser  } from '../config/role';
 
 const quickActionPage = new quickactionpage();
 

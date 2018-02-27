@@ -1,6 +1,6 @@
-import ObjectivePage from './models/ObjectivePage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import ObjectivePage from '../models/ObjectivePage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 import { Selector } from 'testcafe';
 
 // Page model

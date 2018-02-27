@@ -1,6 +1,6 @@
-import AdminSettingPage from './models/Admin-SettingPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminSettingPage from '../models/Admin-SettingPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminSettingPage = new AdminSettingPage();

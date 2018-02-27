@@ -1,6 +1,6 @@
-import AdminCoreValuePage from './models/Admin-AchievementPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminCoreValuePage from '../models/Admin-AchievementPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminCoreValuePage = new AdminCoreValuePage();

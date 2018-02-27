@@ -1,6 +1,6 @@
-import AchievementPage from './models/User-AchievementPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AchievementPage from '../models/User-AchievementPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const achievementpage = new AchievementPage();

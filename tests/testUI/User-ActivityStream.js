@@ -1,6 +1,6 @@
-import Activitystreampage from './models/ActivityStreamPage';
-import config from './config';
-import { adminAccUser } from './config/role';
+import Activitystreampage from '../models/ActivityStreamPage';
+import config from '../config';
+import { adminAccUser } from '../config/role';
 import { Selector } from 'testcafe';
 
 fixture `Testing user dashboard`

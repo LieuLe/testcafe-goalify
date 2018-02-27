@@ -1,6 +1,6 @@
-import AdminBillPage from './models/Admin-BillPage';
-import { adminAccUser } from './config/role';
-import config from './config';
+import AdminBillPage from '../models/Admin-BillPage';
+import { adminAccUser } from '../config/role';
+import config from '../config';
 
 // Page model
 const adminBillPage = new AdminBillPage();
